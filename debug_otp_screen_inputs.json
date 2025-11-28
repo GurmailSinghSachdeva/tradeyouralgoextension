@@ -86,7 +86,7 @@
     "name": null,
     "placeholder": null,
     "className": null,
-    "value": "https://tradeyouralgo.com",
+    "value": "http://tradealgo-env.eba-dughp7yu.ap-south-1.elasticbeanstalk.com/api/reqToken",
     "visible": false,
     "attributes": [
       {
@@ -99,7 +99,7 @@
       },
       {
         "name": "value",
-        "value": "https://tradeyouralgo.com"
+        "value": "http://tradealgo-env.eba-dughp7yu.ap-south-1.elasticbeanstalk.com/api/reqToken"
       },
       {
         "name": "style",

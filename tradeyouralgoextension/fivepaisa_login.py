@@ -7,6 +7,7 @@ from playwright.async_api import async_playwright, Browser, Page
 from typing import Optional
 import logging
 from urllib.parse import urlparse, parse_qs
+import re
 
 from .config import (
     FIVEPAISA_MOBILE_NUMBER,
@@ -212,7 +213,9 @@ class FivePaisaLogin:
 
             # Click verify/submit button after OTP entry
             verify_selectors = [
-                'button:has-text("Verify")',
+                '#btnVerify',
+                'button#btnVerify',
+                'button:visible:has-text("Verify")',
                 'button:has-text("Submit")',
                 'button[type="submit"]',
                 'button:has-text("Login")',
@@ -220,10 +223,10 @@ class FivePaisaLogin:
             
             for btn_selector in verify_selectors:
                 try:
-                    btn = await self.page.wait_for_selector(btn_selector, timeout=3000)
+                    btn = await self.page.wait_for_selector(btn_selector, timeout=5000, state="visible")
                     if btn:
-                        await self.page.click(btn_selector)
-                        logger.info("Verify/Submit button clicked after OTP")
+                        await btn.click()
+                        logger.info(f"Verify/Submit button clicked after OTP using selector: {btn_selector}")
                         break
                 except:
                     continue
@@ -261,13 +264,28 @@ class FivePaisaLogin:
                 await self.page.fill(f'#{pin_field_ids[idx]}', digit)
                 await asyncio.sleep(0.1)  # Small delay between fields
             logger.info("PIN entered")
+
+            # Debug: capture PIN screen and button state before submitting
+            try:
+                await self.page.screenshot(path="debug_pin_before_click.png", full_page=True)
+                logger.info("📸 Saved PIN screen screenshot: debug_pin_before_click.png")
+                candidate_btn = await self.page.query_selector('#btnVerificationSubmit')
+                if candidate_btn:
+                    btn_visible = await candidate_btn.is_visible()
+                    btn_enabled = await candidate_btn.is_enabled()
+                    btn_text = await candidate_btn.text_content()
+                    logger.info(f"Submit button state -> visible: {btn_visible}, enabled: {btn_enabled}, text: {btn_text}")
+            except Exception as e:
+                logger.debug(f"Could not capture pre-click PIN debug info: {e}")
             
             # Wait a bit for PIN to be processed
             await asyncio.sleep(0.5)
-            
-            # Click submit button after PIN entry - try multiple strategies
+
+            # Auto-click submit button after PIN entry - try multiple strategies
             pin_submit_selectors = [
-                'button:has-text("Submit")',
+                '#btnVerificationSubmit',
+                'button#btnVerificationSubmit',
+                'button:visible:has-text("Submit")',
                 'button:has-text("Proceed")',
                 'button[type="submit"]',
                 'button:has-text("Verify")',
@@ -277,15 +295,15 @@ class FivePaisaLogin:
                 'button[class*="submit"]',
                 'button[class*="btn"]',
             ]
-            
+
             button_clicked = False
             for btn_selector in pin_submit_selectors:
                 try:
-                    btn = await self.page.wait_for_selector(btn_selector, timeout=2000)
+                    btn = await self.page.wait_for_selector(btn_selector, timeout=3000, state="visible")
                     if btn:
-                        # Check if button is visible and enabled
                         is_visible = await btn.is_visible()
-                        if is_visible:
+                        is_enabled = await btn.is_enabled()
+                        if is_visible and is_enabled:
                             await btn.click()
                             logger.info(f"Submit button clicked after PIN using selector: {btn_selector}")
                             button_clicked = True
@@ -293,7 +311,7 @@ class FivePaisaLogin:
                 except Exception as e:
                     logger.debug(f"Selector {btn_selector} failed: {e}")
                     continue
-            
+
             if not button_clicked:
                 # DEBUG: Find all buttons on the page
                 logger.warning("Could not find submit button with standard selectors. Finding all buttons...")
@@ -311,7 +329,7 @@ class FivePaisaLogin:
                         }));
                     }
                 """)
-                
+
                 logger.info("=" * 80)
                 logger.info("🔍 DEBUG: All Buttons Found on PIN Screen:")
                 logger.info("=" * 80)
@@ -325,7 +343,7 @@ class FivePaisaLogin:
                         logger.info(f"  Text: {btn['text']}")
                         logger.info(f"  Disabled: {btn['disabled']}")
                 logger.info("=" * 80)
-                
+
                 # Try clicking the first visible button that's not disabled
                 for btn_info in buttons_info:
                     if btn_info['visible'] and not btn_info['disabled'] and btn_info['text']:
@@ -337,43 +355,48 @@ class FivePaisaLogin:
                             logger.info(f"Clicked button: {btn_info['text']}")
                             button_clicked = True
                             break
-                        except:
+                        except Exception:
                             continue
-                
+
                 if not button_clicked:
                     logger.error("❌ Could not find or click submit button after PIN entry")
                     await self.page.screenshot(path="pin_submit_error.png")
                     raise Exception("Could not find submit button after PIN entry")
 
-            # Step 5: Wait for redirect to ResponseURL (tradeyouralgo.com)
-            logger.info(f"Waiting for redirect to {FIVEPAISA_RESPONSE_URL}...")
-            
-            # Wait for navigation to the response URL
-            try:
-                await self.page.wait_for_url(
-                    lambda url: FIVEPAISA_RESPONSE_URL in url,
-                    timeout=60000  # 60 seconds timeout for redirect
-                )
-                logger.info(f"Redirected to: {self.page.url}")
-            except Exception as e:
-                logger.warning(f"Redirect wait timeout or error: {e}")
-                logger.info(f"Current URL: {self.page.url}")
-                # Take screenshot for debugging
-                await self.page.screenshot(path="redirect_error.png")
+            # Step 5: Wait for backend callback/redirect and extract access token
+            logger.info(f"Waiting for backend callback/response at {FIVEPAISA_RESPONSE_URL} (no manual redirect) ...")
 
-            # Step 6: Extract access token from redirect URL
-            current_url = self.page.url
-            self.access_token = self._extract_token_from_url(current_url)
+            # Normalize target URL for flexible matching (http/https, trailing slash)
+            target_substr = FIVEPAISA_RESPONSE_URL.replace("https://", "").replace("http://", "").rstrip("/")
+
+            response_text = None
+            try:
+                resp = await self.page.wait_for_event(
+                    "response",
+                    predicate=lambda r: target_substr in r.url.replace("https://", "").replace("http://", ""),
+                    timeout=60000  # give the backend enough time to answer
+                )
+                response_text = await resp.text()
+                logger.info(f"Received response from backend callback (first 200 chars): {response_text[:200]}...")
+            except Exception as e:
+                logger.warning(f"Did not get backend callback response within timeout: {e}")
+                logger.info("Continuing without redirect wait; page should stay on 5paisa")
+
+            # Step 6: Extract access token from response text or redirect URL
+            self.access_token = None
+            if response_text:
+                self.access_token = self._extract_token_from_response(response_text)
             
             if self.access_token:
-                logger.info("✅ Login successful! Access token extracted from redirect URL.")
+                logger.info("✅ Login successful! Access token obtained.")
                 logger.info(f"Token (first 20 chars): {self.access_token[:20]}...")
                 return self.access_token
             else:
-                logger.error("❌ Login completed but access token not found in redirect URL")
-                logger.error(f"Redirect URL: {current_url}")
+                logger.error("❌ Login completed but access token not found in backend response body")
                 # Take screenshot for debugging
                 await self.page.screenshot(path="token_extraction_error.png")
+                # Keep the browser open a bit longer so you can manually check
+                await asyncio.sleep(30)
                 return None
 
         except Exception as e:
@@ -432,6 +455,24 @@ class FivePaisaLogin:
 
         except Exception as e:
             logger.error(f"Error extracting RequestToken from URL: {str(e)}")
+            return None
+
+    def _extract_token_from_response(self, response_text: str) -> Optional[str]:
+        """
+        Extract AccessToken from backend callback response body.
+        
+        Expected format: "AccessToken Generated : <token>"
+        """
+        try:
+            match = re.search(r"AccessToken\s+Generated\s*:\s*(\S+)", response_text)
+            if match:
+                token = match.group(1).strip()
+                logger.info("AccessToken found in backend response body")
+                return token
+            logger.warning("AccessToken not found in backend response body")
+            return None
+        except Exception as e:
+            logger.error(f"Error extracting token from backend response: {str(e)}")
             return None
 
     async def _debug_page_structure(self, stage: str):
@@ -535,4 +576,3 @@ async def login_and_get_token() -> Optional[str]:
         return token
     finally:
         await login_handler.close()
-

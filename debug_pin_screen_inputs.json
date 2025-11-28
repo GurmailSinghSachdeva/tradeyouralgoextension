@@ -86,7 +86,7 @@
     "name": null,
     "placeholder": null,
     "className": null,
-    "value": "https://tradeyouralgo.com",
+    "value": "http://tradealgo-env.eba-dughp7yu.ap-south-1.elasticbeanstalk.com/api/reqToken",
     "visible": false,
     "attributes": [
       {
@@ -99,7 +99,7 @@
       },
       {
         "name": "value",
-        "value": "https://tradeyouralgo.com"
+        "value": "http://tradealgo-env.eba-dughp7yu.ap-south-1.elasticbeanstalk.com/api/reqToken"
       },
       {
         "name": "style",
@@ -583,7 +583,7 @@
     "placeholder": "Mobile or Email or Client Code",
     "className": null,
     "value": "7838XXXX79",
-    "visible": true,
+    "visible": false,
     "attributes": [
       {
         "name": "type",
@@ -618,8 +618,8 @@
     "name": null,
     "placeholder": null,
     "className": "form-control",
-    "value": "1",
-    "visible": true,
+    "value": "4",
+    "visible": false,
     "attributes": [
       {
         "name": "class",
@@ -650,8 +650,8 @@
     "name": null,
     "placeholder": null,
     "className": "form-control",
-    "value": "6",
-    "visible": true,
+    "value": "2",
+    "visible": false,
     "attributes": [
       {
         "name": "class",
@@ -682,8 +682,8 @@
     "name": null,
     "placeholder": null,
     "className": "form-control",
-    "value": "2",
-    "visible": true,
+    "value": "1",
+    "visible": false,
     "attributes": [
       {
         "name": "class",
@@ -714,8 +714,8 @@
     "name": null,
     "placeholder": null,
     "className": "form-control",
-    "value": "9",
-    "visible": true,
+    "value": "5",
+    "visible": false,
     "attributes": [
       {
         "name": "class",
@@ -746,8 +746,8 @@
     "name": null,
     "placeholder": null,
     "className": "form-control",
-    "value": "9",
-    "visible": true,
+    "value": "4",
+    "visible": false,
     "attributes": [
       {
         "name": "class",
@@ -778,8 +778,8 @@
     "name": null,
     "placeholder": null,
     "className": "form-control",
-    "value": "0",
-    "visible": true,
+    "value": "8",
+    "visible": false,
     "attributes": [
       {
         "name": "class",
@@ -1263,7 +1263,7 @@
     "placeholder": null,
     "className": "form-control ",
     "value": null,
-    "visible": false,
+    "visible": true,
     "attributes": [
       {
         "name": "class",
@@ -1311,7 +1311,7 @@
     "placeholder": null,
     "className": "form-control ",
     "value": null,
-    "visible": false,
+    "visible": true,
     "attributes": [
       {
         "name": "class",
@@ -1359,7 +1359,7 @@
     "placeholder": null,
     "className": "form-control ",
     "value": null,
-    "visible": false,
+    "visible": true,
     "attributes": [
       {
         "name": "class",
@@ -1407,7 +1407,7 @@
     "placeholder": null,
     "className": "form-control ",
     "value": null,
-    "visible": false,
+    "visible": true,
     "attributes": [
       {
         "name": "class",
@@ -1455,7 +1455,7 @@
     "placeholder": null,
     "className": "form-control ",
     "value": null,
-    "visible": false,
+    "visible": true,
     "attributes": [
       {
         "name": "class",
@@ -1503,7 +1503,7 @@
     "placeholder": null,
     "className": "form-control ",
     "value": null,
-    "visible": false,
+    "visible": true,
     "attributes": [
       {
         "name": "class",

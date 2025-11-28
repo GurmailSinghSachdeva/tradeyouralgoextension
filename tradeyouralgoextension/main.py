@@ -7,8 +7,7 @@ import sys
 import os
 
 from .fivepaisa_login import login_and_get_token
-from .backend_client import BackendClient
-from .config import FIVEPAISA_MOBILE_NUMBER, BACKEND_API_ENDPOINT, OTP_API_ENABLED, OTP_API_URL
+from .config import FIVEPAISA_MOBILE_NUMBER, OTP_API_ENABLED, OTP_API_URL
 from .otp_api_server import start_otp_api_server_thread
 from .logging_config import setup_logging
 
@@ -54,25 +53,10 @@ async def main_async():
             logger.error("Failed to obtain access token from 5paisa")
             return False
         
-        logger.info(f"Access token obtained: {access_token[:20]}...")
-        
-        # Step 2: Send token to backend
-        logger.info("Step 2: Sending access token to backend...")
-        backend_client = BackendClient()
-        
-        # Verify backend connection (optional)
-        if not backend_client.verify_connection():
-            logger.warning("Backend health check failed, but continuing...")
-        
-        success = backend_client.send_access_token(access_token)
-        
-        if success:
-            logger.info("✅ Successfully logged in and sent access token to backend!")
-            logger.info(f"Backend endpoint: {BACKEND_API_ENDPOINT}")
-            return True
-        else:
-            logger.error("❌ Failed to send access token to backend")
-            return False
+        logger.info(f"Access token obtained (first 20 chars): {access_token[:20]}...")
+        print(f"AccessToken: {access_token}")
+        logger.info("✅ Login completed and access token printed.")
+        return True
 
     except Exception as e:
         logger.error(f"Error in main execution: {str(e)}", exc_info=True)
@@ -94,4 +78,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
