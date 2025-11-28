@@ -1,0 +1,673 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#C9354D">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#C9354D">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#C9354D">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="pragma" content="no-cache">
+
+     <!-- , initial-scale=1.0, maximum-scale=1.0 -->
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <meta name="robots" content="noydir, noodp">
+    <title>Index</title>
+    <link rel="icon" href="/WebVendorLogin/Images/favicon.png" type="image/png">
+
+    
+    <link href="/WebVendorLogin/Content/styles?v=vbsiytCVQNxAbHRbaUGM2qyyqxvmvxN3ldPTCgPFS8M1" rel="stylesheet">
+
+</head>
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false" onload="preventBack();" onpageshow="if (event.persisted) preventBack();" onunload="">
+
+    
+
+<style>
+
+    .nonclickelem {
+        color: #626262 !important;
+        pointer-events: none;
+    }
+
+    .sec_login {
+        position: relative;
+    }
+
+    .pageloader {
+        position: absolute;
+        bottom: 55px;
+        left: 50%;
+        right: 50%;
+        /* top: 0px; */
+        width: 10%;
+        height: 10%;
+        z-index: 9999;
+        transform: translate(-50%, -50%);
+        background: url(../../content/images/download.png) 50% 50% no-repeat rgb(249 249 249 / 0%);
+        opacity: .8;
+    }
+</style>
+<script type="text/javascript">
+    function preventBack() { window.history.forward(1); }
+            window.ApplicationVirtualPath = '/WebVendorLogin/';
+
+</script>
+
+    <section>
+        <input type="hidden" id="hdnMobileNo" value="7838XXXX79" style="">
+        <input type="hidden" id="hdnVendorKey" value="NgsvVsF61rnO6VAXASdlhvXqLnkZuKCT" style="">
+        <input type="hidden" id="hdnState" style="">
+        <input type="hidden" id="hdnResponseURL" value="https://tradeyouralgo.com" style="">
+        <input type="hidden" id="hdnClientCode" value="58245489" style="">
+        <input type="button" id="hdnOTPSenttime" value="0:0:30" style="display: none;">
+        <input type="button" id="hdnForgetLink" value="N" style="display: none;">
+        <input type="button" id="hdnForgetTOTPLink" value="N" style="display: none;">
+        <input type="button" id="hdnResendTOTPLink" value="N" style="display: none;">
+        <input type="button" id="hdnClearId" value="2" style="display: none;">
+        <input type="button" id="hdnTOTP" value="" style="display: none;">
+        
+        <div class="container">
+            <div class="login-wrapper">
+                <div class="col-sm-6 boxLeft">
+                    <div class="box_wrap text-center">
+                        <div class="open-api-logo">
+                            <div class="logo_wrap">
+                                <img src="/WebVendorLogin/Content/images/login/5PaisaLightLogo.svg" class="img-responsive" alt="logo">
+                                
+                            </div>
+                        </div>
+                        <img src="/WebVendorLogin/Content/images/login/login-banner.gif">
+                        <div class="txt-slider">
+                            <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                                <div class="carousel-inner text-center">
+                                    <div class="item active">
+                                        <p>Powerful platform for lightning fast trading and easy trade execution</p>
+                                    </div>
+                                    <div class="item">
+                                        <p>Powerful platform for lightning fast trading and easy trade execution</p>
+                                    </div>
+                                    <div class="item">
+                                        <p>Powerful platform for lightning fast trading and easy trade execution</p>
+                                    </div>
+                                </div>
+                                <!-- Bottom Carousel Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#quote-carousel" data-slide-to="1"></li>
+                                    <li data-target="#quote-carousel" data-slide-to="2"></li>
+                                </ol>
+
+                                <!-- Carousel Buttons Next/Prev -->
+                                <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                                <a data-slide="next" href="#quote-carousel" class="right carousel-control"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                            </div>
+                        </div>
+                        <button class="btn-light" onclick="location.href='https://www.5paisa.com/open-demat-account';">Open Demat Account</button>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 boxRight">
+                    <div class="box_wrap">
+                        
+                        <div class="sec_login  hide">
+                            <h3 class="frm_head">Login</h3>
+                            <div class="input_wrap">
+                                <label>ENTER USER ID</label>
+                                <input type="text" id="ObjVLoginModal_UserName" placeholder="Mobile or Email or Client Code" class="" style="">
+
+                                <div id="dvErrMsgLoginModalUserName" class="error-msg" style="display:none">Sample Text Error</div>
+                            </div>
+                            <div class="msg-wrap error hide" id="ErrorLoginemailId">
+                                <div class="msg-wrap-img"><img src="/WebVendorLogin/Content/images/Error.png" alt="icon"></div>
+                                <div class="msg-wrap-txt">
+                                    
+                                    <p class="msg_txt" id="txtLoginemailId"></p>
+                                </div>
+                            </div>
+                            <button class="btn-dark btn-block top_space" id="BtnGenOtp">Proceed</button>
+
+                            <div class="bottom_div">
+                                Dont have an account? <a href="https://www.5paisa.com/open-demat-account" class="frm_link">Register here</a>
+                            </div>
+                            
+                        </div>
+                        
+
+                        
+                        <div class="sec_TOTP hide">
+                            <h3 class="frm_head">TOTP Verification</h3>
+                            <p class="frm_txt">We have sent an OTP on your mobile number and registered email address.</p>
+                            <div class="input_wrap">
+                                <label>ENTER TOTP</label>
+                                <div class="mpin">
+                                    <div id="dvLoginTOTP" class="mpin-box">
+                                        <input class="form-control" type="number" id="dvLoginTOTP1" autocomplete="off" min="1" max="1" style="">
+                                        <input class="form-control" type="number" id="dvLoginTOTP2" autocomplete="off" min="1" max="1" style="">
+                                        <input class="form-control" type="number" id="dvLoginTOTP3" autocomplete="off" min="1" max="1" style="">
+                                        <input class="form-control" type="number" id="dvLoginTOTP4" autocomplete="off" min="1" max="1" style="">
+                                        <input class="form-control" type="number" id="dvLoginTOTP5" autocomplete="off" min="1" max="1" style="">
+                                        <input class="form-control" type="number" id="dvLoginTOTP6" autocomplete="off" min="1" max="1" style="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Error Message-->
+                            <div class="msg-wrap error hide" id="ErrorLoginMPINWithTOTP">
+                                <div class="msg-wrap-img "><img src="/WebVendorLogin/Content/images/login/Error.png" alt="icon"></div>
+                                <div class="msg-wrap-txt">
+                                    <p class="msg_txt" id="TOTPErrorMsg"></p>
+                                </div>
+                            </div>
+                            <!--Error Message End-->
+                            <button class="btn-dark btn-block top_space" id="btnTOTPVerify">Verify</button>
+                            <div class="bottom_link">
+                                <a href="javascript: void(0)" class="" id="LoginOTPMobile">Can’t access, Login via email/mobile OTP.</a>
+                            </div>
+                            <div class="msg-wrap error hide" id="ErrorWithTOTP">
+                                <div class="msg-wrap-img"><img src="/WebVendorLogin/Content/images/login/Error.png" alt="icon"></div>
+                                <div class="msg-wrap-txt">
+                                    
+                                    <p class="msg_txt" id="txtLoginwithTOTPId"></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+
+
+
+                        
+
+                        <div class="sec_otp-verification">
+                            
+                            <h3 class="frm_head">OTP Verification</h3>
+                            <p class="frm_txt error-msg">We have sent an OTP on your mobile number and registered email address.</p>
+                            <div class="input_wrap">
+                                <label>MOBILE NUMBER</label>
+                                <div class="input_icon-wrap">
+                                    
+                                    <input type="text" id="txtMobNo" placeholder="Mobile or Email or Client Code" class="" disabled="disabled" style="">
+                                    <div id="dvErrMsgLoginModalUserName_OTP" class="error-msg" style="display:none">Sample Text Error</div>
+                                    <img src="/WebVendorLogin/Content/images/login/Edit.svg" class="input_icon" id="lnkEdit">
+                                </div>
+                            </div>
+                            <div class="input_wrap">
+                                <div class="otp_wrap">
+                                    <label>ENTER OTP</label>
+                                    <div class="counter-block">
+                                        <!-- Add class="inactive" to disabled the 'RESEND OTP' link -->
+                                        <a href="javascript: void(0)" id="lnkResendOTP" class="nonclickelem">RESEND OTP</a>
+                                        <span id="counter" class="counter-no">00:30</span>
+                                    </div>
+                                </div>
+                                <div class="mpin">
+                                    <div id="dvLoginMPINOTP" class="mpin-box">
+                                        <input class="form-control" type="number" id="dvLoginMPINOTP1" autocomplete="off" style="">
+                                        <input class="form-control" type="number" id="dvLoginMPINOTP2" autocomplete="off" style="">
+                                        <input class="form-control" type="number" id="dvLoginMPINOTP3" autocomplete="off" style="">
+                                        <input class="form-control" type="number" id="dvLoginMPINOTP4" autocomplete="off" style="">
+                                        <input class="form-control" type="number" id="dvLoginMPINOTP5" autocomplete="off" style="">
+                                        <input class="form-control" type="number" id="dvLoginMPINOTP6" autocomplete="off" style="">
+                                    </div>
+                                </div>
+                                <!--<div class="mpin--box">
+                                <div class="mpin-input">
+                                    <div class="input--box">
+                                        <input class="input--value" type="text" id="txtOTP" maxlength="6" tabindex="2" />-->
+                                
+                                <!--<div id="dvErrMsgLoginModalUserName_ErrorOTP" class="error-msg" style="display:none">Sample Text Error</div>
+                                        </div>
+                                    </div>
+                                </div>-->
+                            </div>
+
+                            <div class="input_wrap hide">
+                                <label>ENTER DATE OF BIRTH</label>
+                                <div class="input_icon-wrap">
+                                    <input type="password" placeholder="DD-MM-YYYY" id="eyeInputShowId" class="" style="">
+                                    
+                                    <div id="dvErrMsgLoginModalUserName_ErrorDOB" class="error-msg" style="display:none">Sample Text Error</div>
+
+                                    <div class="show--eye input_icon">
+                                        <a href="javascript: void(0)" class="show--eye-click eyeClickBtn" id="eyePassword">
+                                            <img src="/WebVendorLogin/Content/images/eye_open.png" class="" width="20">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="msg-wrap error hide" id="ErrorLoginMPINWithOTP">
+                                <div class="msg-wrap-img"><img src="/WebVendorLogin/content/images/login/Error.png" alt="icon"></div>
+                                <div class="msg-wrap-txt">
+                                    
+                                    <p class="msg_txt" id="txtLoginMPINWithOTP"></p>
+                                </div>
+                            </div>
+                            <!--Error Message End-->
+
+
+                            <button type="button" class="btn-dark btn-block" id="btnVerify">Verify</button>
+                        </div>
+
+
+                        
+
+
+                        
+                        <div class="sec_setupPin hide">
+                            <p class="error-msg" id="frm_txtPIN"></p>
+                            <h3 class="frm_head">Setup PIN</h3>
+                            <div class="input_wrap">
+                                <label>SETUP A 6 DIGIT PIN</label>
+                                <div class="mpin">
+                                    <div id="dvSetupPinId" class="mpin-box">
+                                        <input class="form-control password" type="password" id="dvSetupPinId1" autocomplete="off" style="">
+                                        <input class="form-control password" type="password" id="dvSetupPinId2" autocomplete="off" style="">
+                                        <input class="form-control password" type="password" id="dvSetupPinId3" autocomplete="off" style="">
+                                        <input class="form-control password" type="password" id="dvSetupPinId4" autocomplete="off" style="">
+                                        <input class="form-control password" type="password" id="dvSetupPinId5" autocomplete="off" style="">
+                                        <input class="form-control password" type="password" id="dvSetupPinId6" autocomplete="off" style="">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!--Note Remove hide_block class when need to show confirm digit box -->
+                            <div class="input_wrap hide_block" id="divLoginSetupConfirmPinId">
+                                <label>CONFIRM 6 DIGIT PIN</label>
+                                <div class="mpin">
+                                    <div id="dvConfirmPinId" class="mpin-box">
+                                        <input class="form-control " type="number" id="dvConfirmPinId1" autocomplete="off" style="">
+                                        <input class="form-control " type="number" id="dvConfirmPinId2" autocomplete="off" style="">
+                                        <input class="form-control " type="number" id="dvConfirmPinId3" autocomplete="off" style="">
+                                        <input class="form-control " type="number" id="dvConfirmPinId4" autocomplete="off" style="">
+                                        <input class="form-control " type="number" id="dvConfirmPinId5" autocomplete="off" style="">
+                                        <input class="form-control " type="number" id="dvConfirmPinId6" autocomplete="off" style="">
+                                    </div>
+                                </div>
+                                <div class="msg-wrap error hide" id="ErrorSetupMPIN">
+                                    <div class="msg-wrap-img"><img src="/WebVendorLogin/Content/images/login/Error.png" alt="icon"></div>
+                                    <div class="msg-wrap-txt">
+                                        
+                                        <p class="msg_txt" id="txtSetupMPIN"></p>
+                                    </div>
+                                </div>
+                                <!-- PIN Setup Successful -->
+                                <div class="msg-wrap success hide" id="PINSetupSuccessfulMsg">
+                                    <div class="msg-wrap-img"><img src="/WebVendorLogin/Content/images/login/Success.png" alt="icon"></div>
+                                    <div class="msg-wrap-txt">
+                                        
+                                        <p class="msg_txt" id="divSuccMsg">Enter PIN or fingerprint to login again</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--show below div when checkbox with submit button needs to be display-->
+                            <div class="">
+                                <!--Note Remove hide_block class when need to show checkbox -->
+                                <div class="checkbox_wrap hide_block">
+                                    <div class="chk_wrap">
+                                        <input class="" id="linkDevice" type="checkbox" value="true" checked="checked" style="">
+                                        <label for="linkDevice">Link your device for faster login</label>
+                                    </div>
+                                    <div class="">
+                                        <img src="/WebVendorLogin/Content/images/login/infosquare.svg" alt="icon" class="tip-top" ata-placement="top" data-toggle="tooltip" data-original-title="Linking device makes it easier for users to log in with PIN or biometrics like face / finger biometric rather than entering their login credentials manually.">
+                                    </div>
+                                </div>
+                                <button class="btn-dark btn-block" id="btnSubmitPin" disabled="disabled">Submit</button>
+                            </div>
+                            <!--show below div for Linking Limit Exceeded section-->
+                            <div class="div_linking-limit hide">
+                                <h4>Linking Limit Exceeded</h4>
+                                <div class="line"></div>
+                                <p class="">Do you still want to add this device and delete the first one?</p>
+                                <div class="button_wrap">
+                                    <button class="btn-light">No, Thanks</button>
+                                    <button class="btn-dark">Yes, Bind</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+
+                        
+                        <div class="sec_enterPin hide" id="divEnterPin">
+                            <h3 class="frm_head">Enter PIN</h3>
+                            <div class="input_wrap">
+                                <label>ENTER A 6 DIGIT MPIN</label>
+                                <div class="mpin">
+                                    <div id="dvPin" class="mpin-box">
+                                        <input class="form-control " type="password" oninput="moveFocus(this, 'dvPin2')" inputmode="tel" id="dvPin1" autocomplete="off" min="1" maxlength="1" style="">
+                                        <input class="form-control " type="password" oninput="moveFocus(this, 'dvPin3')" inputmode="tel" id="dvPin2" autocomplete="off" min="1" maxlength="1" style="">
+                                        <input class="form-control " type="password" oninput="moveFocus(this, 'dvPin4')" inputmode="tel" id="dvPin3" autocomplete="off" min="1" maxlength="1" style="">
+                                        <input class="form-control " type="password" oninput="moveFocus(this, 'dvPin5')" inputmode="tel" id="dvPin4" autocomplete="off" min="1" maxlength="1" style="">
+                                        <input class="form-control " type="password" oninput="moveFocus(this, 'dvPin6')" inputmode="tel" id="dvPin5" autocomplete="off" min="1" maxlength="1" style="">
+                                        <input class="form-control " type="password" oninput="moveFocus(this, null)" inputmode="tel" id="dvPin6" autocomplete="off" min="1" maxlength="1" style="">
+                                    </div>
+                                </div>
+                                <div class="msg-wrap error hide" id="ErrorEnterMPIN">
+                                    <div class="msg-wrap-img"><img src="/WebVendorLogin/Content/images/login/Error.png" alt="icon"></div>
+                                    <div class="msg-wrap-txt">
+                                        
+                                        <p class="msg_txt" id="txtErrorEnterMPIN"></p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="top_space ">
+                                <div class="checkbox_wrap hide">
+                                    <div class="chk_wrap">
+                                        <input class="" id="linkDevice" type="checkbox" value="true" checked="checked" style="">
+                                        <label for="linkDevice">Link your device for faster login</label>
+                                    </div>
+                                    <div class="">
+                                        <img src="/WebVendorLogin/Content/images/login/infosquare.svg" alt="icon" class="tip-top" ata-placement="top" data-toggle="tooltip" data-original-title="Linking device makes it easier for users to log in with PIN or biometrics like face / finger biometric rather than entering their login credentials manually.">
+                                    </div>
+                                </div>
+                                <div class="button_wrap">
+                                    <button class="btn-light" id="btnForgotPin">Forgot PIN</button>
+                                    <button class="btn-dark" id="btnVerificationSubmit">Submit</button>
+                                    <div class="pageloader" style="display:none"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+
+
+                        
+                        <div class="sec_setNewPin hide">
+                            <!-- OTP verification with Proceed CTA-->
+                            <div class="otpverify--box ">
+                                <h3 class="frm_head">OTP Verification</h3>
+                                <p class="frm_txt">We have sent an OTP on your mobile number and registered email address.</p>
+                                <div class="input_wrap">
+                                    <label>MOBILE NUMBER</label>
+                                    <div class="input_icon-wrap">
+                                        <input type="text" placeholder="Mobile or Email or Client Code" class="" style="">
+                                        <img src="/WebVendorLogin/Content/images/login/Edit.svg" class="input_icon">
+                                    </div>
+                                </div>
+                                <div class="input_wrap">
+                                    <div class="otp_wrap">
+                                        <label>ENTER OTP</label>
+                                        <div class="counter-block">
+                                            <!-- Add class="inactive" to disabled the 'RESEND OTP' link -->
+                                            <a href="javascript: void(0)" class="">RESEND OTP</a>
+                                            <span id="counter" class="counter-no">00:00</span>
+                                        </div>
+                                    </div>
+                                    <div class="mpin--box">
+                                        <div class="mpin-input">
+                                            <div class="input--box">
+                                                <input class="input--value" type="text" maxlength="6" tabindex="2" style="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input_wrap">
+                                    <label>ENTER DATE OF BIRTH</label>
+                                    <div class="input_icon-wrap">
+                                        <input type="number" placeholder="DDMMYYYY" class="eyeInputShow" style="">
+                                        <div class="show--eye input_icon">
+                                            <a href="javascript:;" class="show--eye-click eyeClickBtn" id="">
+                                                <img src="/WebVendorLogin/Content/images/eye_open.png" class="" width="20">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="btn-dark btn-block mT40">Proceed</button>
+                            </div>
+
+                            <!-- Setup New PIN With  Proceed CTA-->
+                            <div class="pin--box hide">
+                                <h3 class="frm_head">Setup New PIN</h3>
+                                <div class="input_wrap">
+                                    <label>SETUP A 6 DIGIT PIN</label>
+                                    <div class="mpin--box">
+                                        <div class="mpin-input">
+                                            <div class="input--box">
+                                                <input class="input--value password" type="password" maxlength="6" tabindex="2" style="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input_wrap">
+                                    <label>CONFIRM 6 DIGIT PIN</label>
+                                    <div class="mpin--box">
+                                        <div class="mpin-input">
+                                            <div class="input--box">
+                                                <input class="input--value" type="text" maxlength="6" tabindex="2" style="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn-dark btn-block mT40">Proceed</button>
+                            </div>
+
+                        </div>
+                        
+
+
+                        
+                        <div class="sec_user hide">
+                            <h3 class="frm_head">Hello, <span class="txt_pink">Biki</span></h3>
+                            <div class="txt_with-link">
+                                <span>+91 92392 29394</span>
+                                <a href="javascript: void(0)" class="">Switch Account</a>
+                            </div>
+                            <div class="input_wrap">
+                                <div class="d_flex txt_corner">
+                                    <label>UNLOCK USING MPIN</label>
+                                    <a href="javascript: void(0)" class="txt12">FORGOT MPIN</a>
+                                </div>
+                                <div class="mpin--box">
+                                    <div class="mpin-input">
+                                        <div class="input--box">
+                                            <input class="input--value" type="text" maxlength="6" tabindex="2" style="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn-dark btn-block top_space" disabled="">Proceed</button>
+                        </div>
+                        
+
+
+                        
+                        <div class="sec_register-user hide">
+                            <h3 class="frm_head">Login</h3>
+                            <p class="frm_txt">We have sent an OTP on your mobile number and registered email address.</p>
+                            <div class="input_wrap">
+                                <label>ENTER USER ID</label>
+                                <div class="input_icon-wrap">
+                                    <input type="text" placeholder="" class="" style="">
+                                    <img src="/WebVendorLogin/Content/images/login/Edit.svg" class="input_icon">
+                                </div>
+                            </div>
+                            <div class="input_wrap">
+                                <div class="otp_wrap">
+                                    <label>ENTER OTP</label>
+                                    <div class="counter-block">
+                                        <!-- Add class="inactive" to disabled the 'RESEND OTP' link -->
+                                        <a href="javascript: void(0)" class="">RESEND OTP</a>
+                                        <span id="counter" class="counter-no">00:00</span>
+                                    </div>
+                                </div>
+                                <div class="otp--box">
+                                    <div class="otp-input">
+                                        <div class="input--box">
+                                            <input class="input--value" type="text" maxlength="4" tabindex="2" style="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="txt_with-link mT10">
+                                    <a href="javascript: void(0)" class="">Login with Password</a>
+                                </div>
+                            </div>
+                            <!-- show when to display password field -->
+                            <div class="input_wrap">
+                                <label>ENTER Password</label>
+                                <div class="input_icon-wrap">
+                                    <input type="password" placeholder="Password" class="eyeInputShow" style="">
+                                    <div class="show--eye input_icon">
+                                        <a href="javascript:;" class="show--eye-click eyeClickBtn" id="">
+                                            <img src="/WebVendorLogin/Content/images/eye_open.png" class="" width="20">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="txt_with-link mT10">
+                                    <a href="javascript: void(0)" class="">Login with OTP</a>
+                                </div>
+                            </div>
+                            <button class="btn-dark btn-block mT40" disabled="">Verify</button>
+                            <button class="btn-dark btn-block mT40 hide">Submit</button>
+                        </div>
+                        
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+    
+    <footer class="navigation--footer footer">
+        <div class="container">
+            <p class="navigation--footer-text">SEBI Registration Number : INZ000010231, SEBI RA Regn.: INH000004680, IN-DP-192-2016 | AMFI REGN No.: ARN-104096 | CIN : L67190MH2007PLC289249</p>
+            <p class="navigation--footer-link">
+                <a href="/about-us" target="_blank">About Us</a> |
+                <a href="/privacy-policy" target="_blank">Privacy Policy</a> |
+                <a href="/disclaimer" target="_blank">Disclaimer</a> |
+                <a href="https://www.nseindia.com/" target="_blank">NSE</a> |
+                <a href="https://www.bseindia.com/" target="_blank">BSE</a> |
+                <a href="https://www.mcxindia.com/" target="_blank">MCX</a> |
+                <a href="https://www.sebi.gov.in/" target="_blank">SEBI</a> |
+                <a href="https://scores.gov.in/scores/Welcome.html" target="_blank">SEBI Scores</a> |
+                <a href="https://rbi.org.in/" target="_blank">RBI</a>
+            </p>
+            <p class="navigation--footer-nse">NSE Member ID : 14300 | BSE Clg No : 6363 | MCX Member ID : 55945 </p>
+            <p class="navigation--footer-text">Copyright 2025 5paisa Capital Ltd. All Rights Reserved.</p>
+        </div>
+
+        <div id="back-to-top" class="">
+            <img src="/WebVendorLogin/Content/images/up-arrow.png" alt="Go to 5paisa top">
+        </div>
+    </footer>
+    <!-- /FOOTER -->
+    <!-- LOADER OVERLAY -->
+    <div class="loader__overlay" id="pageLoader" style="display: none;">
+        <div class="page__loader"></div>
+    </div>
+
+    <!-- /LOADER OVERLAY -->
+
+    <script src="/WebVendorLogin/bundles/loginJs?v=L4SRhSHCzkeznBWbc6vC-Vm8DiaWZ0r02a3aJFFeoB81"></script>
+
+    <script src="/WebVendorLogin/Scripts/AppScripts/VLoginOTPt.min.js" +math.random()+'"=""></script>
+    
+    <script src="/WebVendorLogin/Scripts/AppScripts/EDIS.js"></script>
+    
+    <script>
+
+
+
+        //function SetTime() {
+
+        //    var timeLeft = 30;
+        //    var elem = document.getElementById('counter');
+        //    var timerId = setInterval(countdown, 1000);
+
+        //    function countdown() {
+        //        if (timeLeft == -1) {
+        //            clearTimeout(timerId);
+        //            $("#lnkResendOTP").removeClass("nonclickelem");
+        //        } else {
+        //            elem.innerHTML = "00:" + (timeLeft < 10 ? "0" : "") + String(timeLeft);;
+        //            timeLeft--;
+        //        }
+        //    }
+
+        //}
+        //SetTime();
+
+        //// function for counter
+        // function countdown() {
+        //     debugger;
+        //     var seconds = 40;
+        //     function tick() {
+        //         var counter = document.getElementById("counter");
+        //         seconds--;
+        //         counter.innerHTML =
+        //           "00:" + (seconds < 10 ? "0" : "") + String(seconds);
+        //         if (seconds > 0) {
+
+        //             setTimeout(tick, 1000);
+        //             if (seconds == 0) {
+        //                 $("#lnkResendOTP").removeClass("nonclickelem");
+        //             }
+        //         }
+
+
+        //     }
+
+        //     tick();
+        // }
+        // countdown();
+
+        //function for bootstrap tooltip
+        $(".tip-top").tooltip({
+            placement: 'top'
+        });
+
+
+
+    </script>
+
+
+
+    <script>
+
+        //styleHeader();
+        $(window).on('scroll', function () {
+            //styleHeader();
+        }); scrollTopPage();
+
+        /*PAGE SCROLL*/
+        function scrollTopPage() {
+            if ($('#back-to-top').length) {
+                var scrollTrigger = 100, // px
+                    backToTop = function () {
+                        var scrollTop = $(window).scrollTop();
+                        if (scrollTop > scrollTrigger) {
+                            $('#back-to-top').addClass('show');
+                        } else {
+                            $('#back-to-top').removeClass('show');
+                        }
+                    };
+                backToTop();
+                $(window).on('scroll', function () {
+                    backToTop();
+                });
+                $('#back-to-top').on('click', function (e) {
+                    e.preventDefault();
+                    $('html,body').animate({
+                        scrollTop: 0
+                    }, 700);
+                });
+            }
+        }
+    </script>
+
+
+</body><!-- FOOTER --></html>

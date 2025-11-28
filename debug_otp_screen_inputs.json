@@ -1,0 +1,1854 @@
+[
+  {
+    "tag": "INPUT",
+    "type": "hidden",
+    "id": "hdnMobileNo",
+    "name": null,
+    "placeholder": null,
+    "className": null,
+    "value": "7838XXXX79",
+    "visible": false,
+    "attributes": [
+      {
+        "name": "type",
+        "value": "hidden"
+      },
+      {
+        "name": "id",
+        "value": "hdnMobileNo"
+      },
+      {
+        "name": "value",
+        "value": "7838XXXX79"
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "hidden",
+    "id": "hdnVendorKey",
+    "name": null,
+    "placeholder": null,
+    "className": null,
+    "value": "NgsvVsF61rnO6VAXASdlhvXqLnkZuKCT",
+    "visible": false,
+    "attributes": [
+      {
+        "name": "type",
+        "value": "hidden"
+      },
+      {
+        "name": "id",
+        "value": "hdnVendorKey"
+      },
+      {
+        "name": "value",
+        "value": "NgsvVsF61rnO6VAXASdlhvXqLnkZuKCT"
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "hidden",
+    "id": "hdnState",
+    "name": null,
+    "placeholder": null,
+    "className": null,
+    "value": null,
+    "visible": false,
+    "attributes": [
+      {
+        "name": "type",
+        "value": "hidden"
+      },
+      {
+        "name": "id",
+        "value": "hdnState"
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "hidden",
+    "id": "hdnResponseURL",
+    "name": null,
+    "placeholder": null,
+    "className": null,
+    "value": "https://tradeyouralgo.com",
+    "visible": false,
+    "attributes": [
+      {
+        "name": "type",
+        "value": "hidden"
+      },
+      {
+        "name": "id",
+        "value": "hdnResponseURL"
+      },
+      {
+        "name": "value",
+        "value": "https://tradeyouralgo.com"
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "hidden",
+    "id": "hdnClientCode",
+    "name": null,
+    "placeholder": null,
+    "className": null,
+    "value": "58245489",
+    "visible": false,
+    "attributes": [
+      {
+        "name": "type",
+        "value": "hidden"
+      },
+      {
+        "name": "id",
+        "value": "hdnClientCode"
+      },
+      {
+        "name": "value",
+        "value": "58245489"
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "button",
+    "id": "hdnOTPSenttime",
+    "name": null,
+    "placeholder": null,
+    "className": null,
+    "value": "0:0:30",
+    "visible": false,
+    "attributes": [
+      {
+        "name": "type",
+        "value": "button"
+      },
+      {
+        "name": "id",
+        "value": "hdnOTPSenttime"
+      },
+      {
+        "name": "value",
+        "value": "0:0:30"
+      },
+      {
+        "name": "style",
+        "value": "display: none;"
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "button",
+    "id": "hdnForgetLink",
+    "name": null,
+    "placeholder": null,
+    "className": null,
+    "value": "N",
+    "visible": false,
+    "attributes": [
+      {
+        "name": "type",
+        "value": "button"
+      },
+      {
+        "name": "id",
+        "value": "hdnForgetLink"
+      },
+      {
+        "name": "value",
+        "value": "N"
+      },
+      {
+        "name": "style",
+        "value": "display: none;"
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "button",
+    "id": "hdnForgetTOTPLink",
+    "name": null,
+    "placeholder": null,
+    "className": null,
+    "value": "N",
+    "visible": false,
+    "attributes": [
+      {
+        "name": "type",
+        "value": "button"
+      },
+      {
+        "name": "id",
+        "value": "hdnForgetTOTPLink"
+      },
+      {
+        "name": "value",
+        "value": "N"
+      },
+      {
+        "name": "style",
+        "value": "display: none;"
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "button",
+    "id": "hdnResendTOTPLink",
+    "name": null,
+    "placeholder": null,
+    "className": null,
+    "value": "N",
+    "visible": false,
+    "attributes": [
+      {
+        "name": "type",
+        "value": "button"
+      },
+      {
+        "name": "id",
+        "value": "hdnResendTOTPLink"
+      },
+      {
+        "name": "value",
+        "value": "N"
+      },
+      {
+        "name": "style",
+        "value": "display: none;"
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "button",
+    "id": "hdnClearId",
+    "name": null,
+    "placeholder": null,
+    "className": null,
+    "value": "2",
+    "visible": false,
+    "attributes": [
+      {
+        "name": "type",
+        "value": "button"
+      },
+      {
+        "name": "id",
+        "value": "hdnClearId"
+      },
+      {
+        "name": "value",
+        "value": "2"
+      },
+      {
+        "name": "style",
+        "value": "display: none;"
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "button",
+    "id": "hdnTOTP",
+    "name": null,
+    "placeholder": null,
+    "className": null,
+    "value": null,
+    "visible": false,
+    "attributes": [
+      {
+        "name": "type",
+        "value": "button"
+      },
+      {
+        "name": "id",
+        "value": "hdnTOTP"
+      },
+      {
+        "name": "value",
+        "value": ""
+      },
+      {
+        "name": "style",
+        "value": "display: none;"
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "text",
+    "id": "ObjVLoginModal_UserName",
+    "name": null,
+    "placeholder": "Mobile or Email or Client Code",
+    "className": null,
+    "value": "7838856179",
+    "visible": false,
+    "attributes": [
+      {
+        "name": "type",
+        "value": "text"
+      },
+      {
+        "name": "id",
+        "value": "ObjVLoginModal_UserName"
+      },
+      {
+        "name": "placeholder",
+        "value": "Mobile or Email or Client Code"
+      },
+      {
+        "name": "class",
+        "value": ""
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "number",
+    "id": "dvLoginTOTP1",
+    "name": null,
+    "placeholder": null,
+    "className": "form-control",
+    "value": null,
+    "visible": false,
+    "attributes": [
+      {
+        "name": "class",
+        "value": "form-control"
+      },
+      {
+        "name": "type",
+        "value": "number"
+      },
+      {
+        "name": "id",
+        "value": "dvLoginTOTP1"
+      },
+      {
+        "name": "autocomplete",
+        "value": "off"
+      },
+      {
+        "name": "min",
+        "value": "1"
+      },
+      {
+        "name": "max",
+        "value": "1"
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "number",
+    "id": "dvLoginTOTP2",
+    "name": null,
+    "placeholder": null,
+    "className": "form-control",
+    "value": null,
+    "visible": false,
+    "attributes": [
+      {
+        "name": "class",
+        "value": "form-control"
+      },
+      {
+        "name": "type",
+        "value": "number"
+      },
+      {
+        "name": "id",
+        "value": "dvLoginTOTP2"
+      },
+      {
+        "name": "autocomplete",
+        "value": "off"
+      },
+      {
+        "name": "min",
+        "value": "1"
+      },
+      {
+        "name": "max",
+        "value": "1"
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "number",
+    "id": "dvLoginTOTP3",
+    "name": null,
+    "placeholder": null,
+    "className": "form-control",
+    "value": null,
+    "visible": false,
+    "attributes": [
+      {
+        "name": "class",
+        "value": "form-control"
+      },
+      {
+        "name": "type",
+        "value": "number"
+      },
+      {
+        "name": "id",
+        "value": "dvLoginTOTP3"
+      },
+      {
+        "name": "autocomplete",
+        "value": "off"
+      },
+      {
+        "name": "min",
+        "value": "1"
+      },
+      {
+        "name": "max",
+        "value": "1"
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "number",
+    "id": "dvLoginTOTP4",
+    "name": null,
+    "placeholder": null,
+    "className": "form-control",
+    "value": null,
+    "visible": false,
+    "attributes": [
+      {
+        "name": "class",
+        "value": "form-control"
+      },
+      {
+        "name": "type",
+        "value": "number"
+      },
+      {
+        "name": "id",
+        "value": "dvLoginTOTP4"
+      },
+      {
+        "name": "autocomplete",
+        "value": "off"
+      },
+      {
+        "name": "min",
+        "value": "1"
+      },
+      {
+        "name": "max",
+        "value": "1"
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "number",
+    "id": "dvLoginTOTP5",
+    "name": null,
+    "placeholder": null,
+    "className": "form-control",
+    "value": null,
+    "visible": false,
+    "attributes": [
+      {
+        "name": "class",
+        "value": "form-control"
+      },
+      {
+        "name": "type",
+        "value": "number"
+      },
+      {
+        "name": "id",
+        "value": "dvLoginTOTP5"
+      },
+      {
+        "name": "autocomplete",
+        "value": "off"
+      },
+      {
+        "name": "min",
+        "value": "1"
+      },
+      {
+        "name": "max",
+        "value": "1"
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "number",
+    "id": "dvLoginTOTP6",
+    "name": null,
+    "placeholder": null,
+    "className": "form-control",
+    "value": null,
+    "visible": false,
+    "attributes": [
+      {
+        "name": "class",
+        "value": "form-control"
+      },
+      {
+        "name": "type",
+        "value": "number"
+      },
+      {
+        "name": "id",
+        "value": "dvLoginTOTP6"
+      },
+      {
+        "name": "autocomplete",
+        "value": "off"
+      },
+      {
+        "name": "min",
+        "value": "1"
+      },
+      {
+        "name": "max",
+        "value": "1"
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "text",
+    "id": "txtMobNo",
+    "name": null,
+    "placeholder": "Mobile or Email or Client Code",
+    "className": null,
+    "value": "7838XXXX79",
+    "visible": true,
+    "attributes": [
+      {
+        "name": "type",
+        "value": "text"
+      },
+      {
+        "name": "id",
+        "value": "txtMobNo"
+      },
+      {
+        "name": "placeholder",
+        "value": "Mobile or Email or Client Code"
+      },
+      {
+        "name": "class",
+        "value": ""
+      },
+      {
+        "name": "disabled",
+        "value": "disabled"
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "number",
+    "id": "dvLoginMPINOTP1",
+    "name": null,
+    "placeholder": null,
+    "className": "form-control",
+    "value": null,
+    "visible": true,
+    "attributes": [
+      {
+        "name": "class",
+        "value": "form-control"
+      },
+      {
+        "name": "type",
+        "value": "number"
+      },
+      {
+        "name": "id",
+        "value": "dvLoginMPINOTP1"
+      },
+      {
+        "name": "autocomplete",
+        "value": "off"
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "number",
+    "id": "dvLoginMPINOTP2",
+    "name": null,
+    "placeholder": null,
+    "className": "form-control",
+    "value": null,
+    "visible": true,
+    "attributes": [
+      {
+        "name": "class",
+        "value": "form-control"
+      },
+      {
+        "name": "type",
+        "value": "number"
+      },
+      {
+        "name": "id",
+        "value": "dvLoginMPINOTP2"
+      },
+      {
+        "name": "autocomplete",
+        "value": "off"
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "number",
+    "id": "dvLoginMPINOTP3",
+    "name": null,
+    "placeholder": null,
+    "className": "form-control",
+    "value": null,
+    "visible": true,
+    "attributes": [
+      {
+        "name": "class",
+        "value": "form-control"
+      },
+      {
+        "name": "type",
+        "value": "number"
+      },
+      {
+        "name": "id",
+        "value": "dvLoginMPINOTP3"
+      },
+      {
+        "name": "autocomplete",
+        "value": "off"
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "number",
+    "id": "dvLoginMPINOTP4",
+    "name": null,
+    "placeholder": null,
+    "className": "form-control",
+    "value": null,
+    "visible": true,
+    "attributes": [
+      {
+        "name": "class",
+        "value": "form-control"
+      },
+      {
+        "name": "type",
+        "value": "number"
+      },
+      {
+        "name": "id",
+        "value": "dvLoginMPINOTP4"
+      },
+      {
+        "name": "autocomplete",
+        "value": "off"
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "number",
+    "id": "dvLoginMPINOTP5",
+    "name": null,
+    "placeholder": null,
+    "className": "form-control",
+    "value": null,
+    "visible": true,
+    "attributes": [
+      {
+        "name": "class",
+        "value": "form-control"
+      },
+      {
+        "name": "type",
+        "value": "number"
+      },
+      {
+        "name": "id",
+        "value": "dvLoginMPINOTP5"
+      },
+      {
+        "name": "autocomplete",
+        "value": "off"
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "number",
+    "id": "dvLoginMPINOTP6",
+    "name": null,
+    "placeholder": null,
+    "className": "form-control",
+    "value": null,
+    "visible": true,
+    "attributes": [
+      {
+        "name": "class",
+        "value": "form-control"
+      },
+      {
+        "name": "type",
+        "value": "number"
+      },
+      {
+        "name": "id",
+        "value": "dvLoginMPINOTP6"
+      },
+      {
+        "name": "autocomplete",
+        "value": "off"
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "password",
+    "id": "eyeInputShowId",
+    "name": null,
+    "placeholder": "DD-MM-YYYY",
+    "className": null,
+    "value": null,
+    "visible": false,
+    "attributes": [
+      {
+        "name": "type",
+        "value": "password"
+      },
+      {
+        "name": "placeholder",
+        "value": "DD-MM-YYYY"
+      },
+      {
+        "name": "id",
+        "value": "eyeInputShowId"
+      },
+      {
+        "name": "class",
+        "value": ""
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "password",
+    "id": "dvSetupPinId1",
+    "name": null,
+    "placeholder": null,
+    "className": "form-control password",
+    "value": null,
+    "visible": false,
+    "attributes": [
+      {
+        "name": "class",
+        "value": "form-control password"
+      },
+      {
+        "name": "type",
+        "value": "password"
+      },
+      {
+        "name": "id",
+        "value": "dvSetupPinId1"
+      },
+      {
+        "name": "autocomplete",
+        "value": "off"
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "password",
+    "id": "dvSetupPinId2",
+    "name": null,
+    "placeholder": null,
+    "className": "form-control password",
+    "value": null,
+    "visible": false,
+    "attributes": [
+      {
+        "name": "class",
+        "value": "form-control password"
+      },
+      {
+        "name": "type",
+        "value": "password"
+      },
+      {
+        "name": "id",
+        "value": "dvSetupPinId2"
+      },
+      {
+        "name": "autocomplete",
+        "value": "off"
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "password",
+    "id": "dvSetupPinId3",
+    "name": null,
+    "placeholder": null,
+    "className": "form-control password",
+    "value": null,
+    "visible": false,
+    "attributes": [
+      {
+        "name": "class",
+        "value": "form-control password"
+      },
+      {
+        "name": "type",
+        "value": "password"
+      },
+      {
+        "name": "id",
+        "value": "dvSetupPinId3"
+      },
+      {
+        "name": "autocomplete",
+        "value": "off"
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "password",
+    "id": "dvSetupPinId4",
+    "name": null,
+    "placeholder": null,
+    "className": "form-control password",
+    "value": null,
+    "visible": false,
+    "attributes": [
+      {
+        "name": "class",
+        "value": "form-control password"
+      },
+      {
+        "name": "type",
+        "value": "password"
+      },
+      {
+        "name": "id",
+        "value": "dvSetupPinId4"
+      },
+      {
+        "name": "autocomplete",
+        "value": "off"
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "password",
+    "id": "dvSetupPinId5",
+    "name": null,
+    "placeholder": null,
+    "className": "form-control password",
+    "value": null,
+    "visible": false,
+    "attributes": [
+      {
+        "name": "class",
+        "value": "form-control password"
+      },
+      {
+        "name": "type",
+        "value": "password"
+      },
+      {
+        "name": "id",
+        "value": "dvSetupPinId5"
+      },
+      {
+        "name": "autocomplete",
+        "value": "off"
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "password",
+    "id": "dvSetupPinId6",
+    "name": null,
+    "placeholder": null,
+    "className": "form-control password",
+    "value": null,
+    "visible": false,
+    "attributes": [
+      {
+        "name": "class",
+        "value": "form-control password"
+      },
+      {
+        "name": "type",
+        "value": "password"
+      },
+      {
+        "name": "id",
+        "value": "dvSetupPinId6"
+      },
+      {
+        "name": "autocomplete",
+        "value": "off"
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "number",
+    "id": "dvConfirmPinId1",
+    "name": null,
+    "placeholder": null,
+    "className": "form-control ",
+    "value": null,
+    "visible": false,
+    "attributes": [
+      {
+        "name": "class",
+        "value": "form-control "
+      },
+      {
+        "name": "type",
+        "value": "number"
+      },
+      {
+        "name": "id",
+        "value": "dvConfirmPinId1"
+      },
+      {
+        "name": "autocomplete",
+        "value": "off"
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "number",
+    "id": "dvConfirmPinId2",
+    "name": null,
+    "placeholder": null,
+    "className": "form-control ",
+    "value": null,
+    "visible": false,
+    "attributes": [
+      {
+        "name": "class",
+        "value": "form-control "
+      },
+      {
+        "name": "type",
+        "value": "number"
+      },
+      {
+        "name": "id",
+        "value": "dvConfirmPinId2"
+      },
+      {
+        "name": "autocomplete",
+        "value": "off"
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "number",
+    "id": "dvConfirmPinId3",
+    "name": null,
+    "placeholder": null,
+    "className": "form-control ",
+    "value": null,
+    "visible": false,
+    "attributes": [
+      {
+        "name": "class",
+        "value": "form-control "
+      },
+      {
+        "name": "type",
+        "value": "number"
+      },
+      {
+        "name": "id",
+        "value": "dvConfirmPinId3"
+      },
+      {
+        "name": "autocomplete",
+        "value": "off"
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "number",
+    "id": "dvConfirmPinId4",
+    "name": null,
+    "placeholder": null,
+    "className": "form-control ",
+    "value": null,
+    "visible": false,
+    "attributes": [
+      {
+        "name": "class",
+        "value": "form-control "
+      },
+      {
+        "name": "type",
+        "value": "number"
+      },
+      {
+        "name": "id",
+        "value": "dvConfirmPinId4"
+      },
+      {
+        "name": "autocomplete",
+        "value": "off"
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "number",
+    "id": "dvConfirmPinId5",
+    "name": null,
+    "placeholder": null,
+    "className": "form-control ",
+    "value": null,
+    "visible": false,
+    "attributes": [
+      {
+        "name": "class",
+        "value": "form-control "
+      },
+      {
+        "name": "type",
+        "value": "number"
+      },
+      {
+        "name": "id",
+        "value": "dvConfirmPinId5"
+      },
+      {
+        "name": "autocomplete",
+        "value": "off"
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "number",
+    "id": "dvConfirmPinId6",
+    "name": null,
+    "placeholder": null,
+    "className": "form-control ",
+    "value": null,
+    "visible": false,
+    "attributes": [
+      {
+        "name": "class",
+        "value": "form-control "
+      },
+      {
+        "name": "type",
+        "value": "number"
+      },
+      {
+        "name": "id",
+        "value": "dvConfirmPinId6"
+      },
+      {
+        "name": "autocomplete",
+        "value": "off"
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "checkbox",
+    "id": "linkDevice",
+    "name": null,
+    "placeholder": null,
+    "className": null,
+    "value": "true",
+    "visible": false,
+    "attributes": [
+      {
+        "name": "class",
+        "value": ""
+      },
+      {
+        "name": "id",
+        "value": "linkDevice"
+      },
+      {
+        "name": "type",
+        "value": "checkbox"
+      },
+      {
+        "name": "value",
+        "value": "true"
+      },
+      {
+        "name": "checked",
+        "value": "checked"
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "password",
+    "id": "dvPin1",
+    "name": null,
+    "placeholder": null,
+    "className": "form-control ",
+    "value": null,
+    "visible": false,
+    "attributes": [
+      {
+        "name": "class",
+        "value": "form-control "
+      },
+      {
+        "name": "type",
+        "value": "password"
+      },
+      {
+        "name": "oninput",
+        "value": "moveFocus(this, 'dvPin2')"
+      },
+      {
+        "name": "inputmode",
+        "value": "tel"
+      },
+      {
+        "name": "id",
+        "value": "dvPin1"
+      },
+      {
+        "name": "autocomplete",
+        "value": "off"
+      },
+      {
+        "name": "min",
+        "value": "1"
+      },
+      {
+        "name": "maxlength",
+        "value": "1"
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "password",
+    "id": "dvPin2",
+    "name": null,
+    "placeholder": null,
+    "className": "form-control ",
+    "value": null,
+    "visible": false,
+    "attributes": [
+      {
+        "name": "class",
+        "value": "form-control "
+      },
+      {
+        "name": "type",
+        "value": "password"
+      },
+      {
+        "name": "oninput",
+        "value": "moveFocus(this, 'dvPin3')"
+      },
+      {
+        "name": "inputmode",
+        "value": "tel"
+      },
+      {
+        "name": "id",
+        "value": "dvPin2"
+      },
+      {
+        "name": "autocomplete",
+        "value": "off"
+      },
+      {
+        "name": "min",
+        "value": "1"
+      },
+      {
+        "name": "maxlength",
+        "value": "1"
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "password",
+    "id": "dvPin3",
+    "name": null,
+    "placeholder": null,
+    "className": "form-control ",
+    "value": null,
+    "visible": false,
+    "attributes": [
+      {
+        "name": "class",
+        "value": "form-control "
+      },
+      {
+        "name": "type",
+        "value": "password"
+      },
+      {
+        "name": "oninput",
+        "value": "moveFocus(this, 'dvPin4')"
+      },
+      {
+        "name": "inputmode",
+        "value": "tel"
+      },
+      {
+        "name": "id",
+        "value": "dvPin3"
+      },
+      {
+        "name": "autocomplete",
+        "value": "off"
+      },
+      {
+        "name": "min",
+        "value": "1"
+      },
+      {
+        "name": "maxlength",
+        "value": "1"
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "password",
+    "id": "dvPin4",
+    "name": null,
+    "placeholder": null,
+    "className": "form-control ",
+    "value": null,
+    "visible": false,
+    "attributes": [
+      {
+        "name": "class",
+        "value": "form-control "
+      },
+      {
+        "name": "type",
+        "value": "password"
+      },
+      {
+        "name": "oninput",
+        "value": "moveFocus(this, 'dvPin5')"
+      },
+      {
+        "name": "inputmode",
+        "value": "tel"
+      },
+      {
+        "name": "id",
+        "value": "dvPin4"
+      },
+      {
+        "name": "autocomplete",
+        "value": "off"
+      },
+      {
+        "name": "min",
+        "value": "1"
+      },
+      {
+        "name": "maxlength",
+        "value": "1"
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "password",
+    "id": "dvPin5",
+    "name": null,
+    "placeholder": null,
+    "className": "form-control ",
+    "value": null,
+    "visible": false,
+    "attributes": [
+      {
+        "name": "class",
+        "value": "form-control "
+      },
+      {
+        "name": "type",
+        "value": "password"
+      },
+      {
+        "name": "oninput",
+        "value": "moveFocus(this, 'dvPin6')"
+      },
+      {
+        "name": "inputmode",
+        "value": "tel"
+      },
+      {
+        "name": "id",
+        "value": "dvPin5"
+      },
+      {
+        "name": "autocomplete",
+        "value": "off"
+      },
+      {
+        "name": "min",
+        "value": "1"
+      },
+      {
+        "name": "maxlength",
+        "value": "1"
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "password",
+    "id": "dvPin6",
+    "name": null,
+    "placeholder": null,
+    "className": "form-control ",
+    "value": null,
+    "visible": false,
+    "attributes": [
+      {
+        "name": "class",
+        "value": "form-control "
+      },
+      {
+        "name": "type",
+        "value": "password"
+      },
+      {
+        "name": "oninput",
+        "value": "moveFocus(this, null)"
+      },
+      {
+        "name": "inputmode",
+        "value": "tel"
+      },
+      {
+        "name": "id",
+        "value": "dvPin6"
+      },
+      {
+        "name": "autocomplete",
+        "value": "off"
+      },
+      {
+        "name": "min",
+        "value": "1"
+      },
+      {
+        "name": "maxlength",
+        "value": "1"
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "checkbox",
+    "id": "linkDevice",
+    "name": null,
+    "placeholder": null,
+    "className": null,
+    "value": "true",
+    "visible": false,
+    "attributes": [
+      {
+        "name": "class",
+        "value": ""
+      },
+      {
+        "name": "id",
+        "value": "linkDevice"
+      },
+      {
+        "name": "type",
+        "value": "checkbox"
+      },
+      {
+        "name": "value",
+        "value": "true"
+      },
+      {
+        "name": "checked",
+        "value": "checked"
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "text",
+    "id": null,
+    "name": null,
+    "placeholder": "Mobile or Email or Client Code",
+    "className": null,
+    "value": null,
+    "visible": false,
+    "attributes": [
+      {
+        "name": "type",
+        "value": "text"
+      },
+      {
+        "name": "placeholder",
+        "value": "Mobile or Email or Client Code"
+      },
+      {
+        "name": "class",
+        "value": ""
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "text",
+    "id": null,
+    "name": null,
+    "placeholder": null,
+    "className": "input--value",
+    "value": null,
+    "visible": false,
+    "attributes": [
+      {
+        "name": "class",
+        "value": "input--value"
+      },
+      {
+        "name": "type",
+        "value": "text"
+      },
+      {
+        "name": "maxlength",
+        "value": "6"
+      },
+      {
+        "name": "tabindex",
+        "value": "2"
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "number",
+    "id": null,
+    "name": null,
+    "placeholder": "DDMMYYYY",
+    "className": "eyeInputShow",
+    "value": null,
+    "visible": false,
+    "attributes": [
+      {
+        "name": "type",
+        "value": "number"
+      },
+      {
+        "name": "placeholder",
+        "value": "DDMMYYYY"
+      },
+      {
+        "name": "class",
+        "value": "eyeInputShow"
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "password",
+    "id": null,
+    "name": null,
+    "placeholder": null,
+    "className": "input--value password",
+    "value": null,
+    "visible": false,
+    "attributes": [
+      {
+        "name": "class",
+        "value": "input--value password"
+      },
+      {
+        "name": "type",
+        "value": "password"
+      },
+      {
+        "name": "maxlength",
+        "value": "6"
+      },
+      {
+        "name": "tabindex",
+        "value": "2"
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "text",
+    "id": null,
+    "name": null,
+    "placeholder": null,
+    "className": "input--value",
+    "value": null,
+    "visible": false,
+    "attributes": [
+      {
+        "name": "class",
+        "value": "input--value"
+      },
+      {
+        "name": "type",
+        "value": "text"
+      },
+      {
+        "name": "maxlength",
+        "value": "6"
+      },
+      {
+        "name": "tabindex",
+        "value": "2"
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "text",
+    "id": null,
+    "name": null,
+    "placeholder": null,
+    "className": "input--value",
+    "value": null,
+    "visible": false,
+    "attributes": [
+      {
+        "name": "class",
+        "value": "input--value"
+      },
+      {
+        "name": "type",
+        "value": "text"
+      },
+      {
+        "name": "maxlength",
+        "value": "6"
+      },
+      {
+        "name": "tabindex",
+        "value": "2"
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "text",
+    "id": null,
+    "name": null,
+    "placeholder": null,
+    "className": null,
+    "value": null,
+    "visible": false,
+    "attributes": [
+      {
+        "name": "type",
+        "value": "text"
+      },
+      {
+        "name": "placeholder",
+        "value": ""
+      },
+      {
+        "name": "class",
+        "value": ""
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "text",
+    "id": null,
+    "name": null,
+    "placeholder": null,
+    "className": "input--value",
+    "value": null,
+    "visible": false,
+    "attributes": [
+      {
+        "name": "class",
+        "value": "input--value"
+      },
+      {
+        "name": "type",
+        "value": "text"
+      },
+      {
+        "name": "maxlength",
+        "value": "4"
+      },
+      {
+        "name": "tabindex",
+        "value": "2"
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "tag": "INPUT",
+    "type": "password",
+    "id": null,
+    "name": null,
+    "placeholder": "Password",
+    "className": "eyeInputShow",
+    "value": null,
+    "visible": false,
+    "attributes": [
+      {
+        "name": "type",
+        "value": "password"
+      },
+      {
+        "name": "placeholder",
+        "value": "Password"
+      },
+      {
+        "name": "class",
+        "value": "eyeInputShow"
+      },
+      {
+        "name": "style",
+        "value": ""
+      }
+    ]
+  }
+]
