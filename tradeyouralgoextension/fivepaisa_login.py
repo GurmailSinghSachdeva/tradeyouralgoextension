@@ -36,11 +36,33 @@ class FivePaisaLogin:
     async def start_browser(self):
         """Initialize Playwright browser"""
         playwright = await async_playwright().start()
-        self.browser = await playwright.chromium.launch(headless=HEADLESS)
+        launch_args = [
+            "--disable-gpu",
+            "--disable-dev-shm-usage",
+            "--no-sandbox",
+            "--disable-blink-features=AutomationControlled",
+            "--disable-blink-features=AutomationControlled,MediaRouter",
+        ]
+        self.browser = await playwright.chromium.launch(
+            headless=HEADLESS,
+            args=launch_args
+        )
         context = await self.browser.new_context(
             viewport={"width": 1920, "height": 1080},
             user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
         )
+        await context.add_init_script("""
+            Object.defineProperty(navigator, 'webdriver', {
+                get: () => undefined,
+            });
+            window.chrome = { runtime: {} };
+            Object.defineProperty(navigator, 'plugins', {
+                get: () => [1, 2, 3, 4, 5],
+            });
+            Object.defineProperty(navigator, 'languages', {
+                get: () => ['en-US', 'en'],
+            });
+        """)
         self.page = await context.new_page()
         logger.info("Browser started successfully")
 
